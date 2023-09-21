@@ -24,6 +24,12 @@ h2 {
     font-size: 2em;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 .sidebar {
     /* Los porcentajes son una medida relativa al tamaño del 
     contenedor padre */
@@ -51,5 +57,27 @@ h2 {
 
 #content {
     margin-left: 250px;
+}
+
+#content .titles {
     padding: 2em;
+    
+}
+
+/* cntr + ç  */
+
+#gallery {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 4px;
+
+}
+
+#gallery .column {
+    flex: 25%;
+    padding: 0 4px;
+}
+
+#gallery .column > img {
+    margin-top: 8px;
 }
