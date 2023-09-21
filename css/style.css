@@ -29,8 +29,24 @@ h2 {
     contenedor padre */
     height: 100%;
     width: 250px;
+    display: flex;
     position: fixed;
-    background-color: rgb(30, 5, 54);
+    padding: 3%;
+    flex-direction: column;
+    background-color: rgb(45, 80, 126);
+}
+
+.sidebar > a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    transition: 0.35s;
+}
+
+.sidebar a:hover {
+    background-color: black;
+    font-weight: bold;
 }
 
 #content {
