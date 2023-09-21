@@ -81,3 +81,15 @@ img {
 #gallery .column > img {
     margin-top: 8px;
 }
+
+@media screen and (max-width: 850px) {
+    #gallery .column {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #gallery .column {
+        flex: 100%;
+    }
+}
