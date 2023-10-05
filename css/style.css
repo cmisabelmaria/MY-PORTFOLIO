@@ -10,86 +10,8 @@ DEL HMTL POR SEPARADO Y LES APLICA UNAS PROPIEDADES DE CSS */
     /* La propiedad box-sizing servirá para modificar el modelo de caja 
     por defecto, para que cuente el padding como tamaño interno de la caja */
 }
-
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: aliceblue;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-.sidebar {
-    /* Los porcentajes son una medida relativa al tamaño del 
-    contenedor padre */
-    height: 100%;
-    width: 250px;
-    display: flex;
-    position: fixed;
-    padding: 3%;
-    flex-direction: column;
-    background-color: rgb(45, 80, 126);
-}
-
-.sidebar > a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    padding: 3%;
-    transition: 0.35s;
-}
-
-.sidebar a:hover {
+[class*="col"] {
     background-color: black;
-    font-weight: bold;
-}
-
-#content {
-    margin-left: 250px;
-}
-
-#content .titles {
-    padding: 2em;
-    
-}
-
-/* cntr + ç  */
-
-#gallery {
-    flex-wrap: wrap;
-    display: flex;
-    padding: 4px;
-
-}
-
-#gallery .column {
-    flex: 25%;
-    padding: 0 4px;
-}
-
-#gallery .column > img {
-    margin-top: 8px;
-}
-
-@media screen and (max-width: 850px) {
-    #gallery .column {
-        flex: 50%;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    #gallery .column {
-        flex: 100%;
-    }
+    color:white;
+    border: 2px solid white;
 }
